@@ -1,0 +1,62 @@
+.file {
+	&__uploader {
+		display: flex;
+		max-width: 1120px;
+		width: 100%;
+		gap: 40px;
+		margin-top: 40px;
+	}
+	&__uploader-item {
+		&:first-child {
+			flex: 0 1 360px;
+		}
+		&:last-child {
+			flex: 1 1 auto;
+		}
+	}
+	&__label {
+		display: flex;
+		height: 360px;
+		width: 360px;
+		position: relative;
+		background-color: $lightblue;
+		border: 2px dashed $blue;
+		cursor: pointer;
+	}
+	&__input {
+		display: none;
+	}
+	&__item {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__item-img {
+	}
+	&__item-text {
+		color: $blue;
+		margin-top: 30px;
+		line-height: 22px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+.profile {
+	&__inputs {
+		margin-top: 17px;
+	}
+	&__input {
+		display: flex;
+		width: 100%;
+		margin-top: 10px;
+		.input {
+			width: 100%;
+			display: flex;
+			max-width: 100%;
+		}
+	}
+}

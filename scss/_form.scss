@@ -1,0 +1,96 @@
+.steps {
+	&__form {
+	}
+	&__numbers {
+		display: flex;
+		align-items: center;
+		position: relative;
+		max-width: 500px;
+		margin-bottom: 60px;
+	}
+	&__number {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 100%;
+		width: 50px;
+		height: 50px;
+		border: 2px solid $lightgray;
+		margin-right: 100px;
+		flex-shrink: 0;
+		background: $white;
+		&.active__number {
+			background-color: $red;
+			border: transparent;
+			transition: 0.5s all ease;
+			path {
+				transition: 1s all ease;
+				fill: $white;
+			}
+		}
+	}
+}
+.progress {
+	top: 50%;
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 2px;
+	background: $lightgray;
+	z-index: -1;
+	&__success {
+		position: absolute;
+		left: 0;
+		top: 0;
+		height: 2px;
+		background-color: $red;
+		transition: 1s all ease;
+	}
+}
+.form {
+	&__step {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+	&__input {
+		display: flex;
+		position: relative;
+		border: 1px solid $lightgray;
+		max-width: 460px;
+		&.search__input {
+			margin-top: 40px;
+		}
+	}
+}
+.step {
+	&__buttons {
+		margin-top: 80px;
+		gap: 20px;
+		display: flex;
+	}
+}
+.button {
+}
+.prev-step {
+}
+.next-step {
+}
+.input {
+	padding: 20px 20px 20px 65px;
+	width: 100%;
+	outline: none;
+	font-size: 19px;
+	line-height: 20px;
+	color: $gray;
+	&:focus {
+		outline: 1px solid $red;
+	}
+	&__img {
+		position: absolute;
+		left: 30px;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+}
