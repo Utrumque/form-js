@@ -1,1 +1,1 @@
-Not adaptive, not finished
+
